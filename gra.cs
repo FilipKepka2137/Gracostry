@@ -16,11 +16,11 @@ namespace Gra_wyrzutnia_rakiet
             int enemyHealth = 50;
             int enemyDamage = 10;
 
-            Console.WriteLine("Witaj w gułagu!");
+            Console.WriteLine("Witaj na arenie!");
             Console.Write("Jak ci na imie?: ");
             playerName = Console.ReadLine();
 
-            Console.WriteLine("Siema, " + playerName + " Zaczynajmy!.");
+            Console.WriteLine("Cześć, " + playerName + " Zaczynajmy!.");
 
             while (playerHealth > 0 && enemyHealth > 0)
             {
@@ -43,7 +43,7 @@ namespace Gra_wyrzutnia_rakiet
                     case "2":
                         Console.WriteLine(playerName + " broni się przed atakiem wroga.");
                         playerHealth -= enemyDamage / 2;
-                        Console.WriteLine("Przegrałes " + (enemyDamage / 2) + " HP.");
+                        Console.WriteLine("Tracisz " + (enemyDamage / 2) + " HP.");
                         break;
                     case "3":
                         Console.WriteLine(playerName + " próbujesz uciec.");
@@ -60,7 +60,7 @@ namespace Gra_wyrzutnia_rakiet
                         }
                         break;
                     default:
-                        Console.WriteLine("Mordo nie umiesz czytać czy pisać?.");
+                        Console.WriteLine("Nie umiesz czytać czy pisać?");
                         break;
                 }
 
@@ -73,7 +73,7 @@ namespace Gra_wyrzutnia_rakiet
 
                 if (playerHealth <= 0)
                 {
-                    Console.WriteLine("\n" + playerName + " Game over Christopher!");
+                    Console.WriteLine("\n" + playerName + " Game over! https://drive.google.com/file/d/1KZGcfUoanist1v5VRJDY2xOuh2kZ__XQ/view?usp=sharing");
                 }
                 else if (enemyHealth <= 0)
                 {
@@ -81,7 +81,7 @@ namespace Gra_wyrzutnia_rakiet
                 }
             }
 
-            Console.WriteLine("\nKoniec!");
+            Console.WriteLine("\nKoniec");
             Console.ReadLine();
         }
     }
